@@ -1,0 +1,41 @@
+body {
+    background-image: url('../IMG/bg-img.jpg');
+    background-size: auto 100vh;
+    font-family: Arial;
+    height: 90vh;
+}
+
+.menu {
+    background-color: rgb(50, 162, 209);
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    font-family: arial;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.site-title,
+.site-subtitle {
+    color: black;
+    text-align: center;
+}
+
+.site-subtitle {
+    font-style: italic;
+    font-size: 30px;
+}
