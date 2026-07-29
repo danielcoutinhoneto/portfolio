@@ -1,0 +1,14 @@
+# Public repository allowlist.
+# Root files and directories not explicitly allowed below stay local.
+/*
+
+!/.gitattributes
+!/.gitignore
+!/README.md
+!/app/
+!/components/
+!/jsconfig.json
+!/next.config.mjs
+!/package-lock.json
+!/package.json
+!/public/
