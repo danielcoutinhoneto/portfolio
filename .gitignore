@@ -1,0 +1,17 @@
+# dependencies
+/node_modules
+
+# Next.js
+/.next
+/out
+
+# local tooling
+/.vercel
+*.log
+
+# environment files
+.env*
+
+# operating systems
+.DS_Store
+Thumbs.db

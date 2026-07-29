@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-daniel-coutinho",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfólio profissional de Daniel Coutinho Neto, Desenvolvedor .NET.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "check": "node scripts/check-content.mjs",
+    "security:check": "node scripts/security-check.mjs",
+    "docs:pdf": "node scripts/generate-docs-pdf.mjs"
+  },
+  "dependencies": {
+    "next": "16.2.12",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "8.5.22",
+      "sharp": "0.35.3"
+    }
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

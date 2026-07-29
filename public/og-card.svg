@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="20" x2="1120" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0d1929"/>
+      <stop offset="1" stop-color="#050b14"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="110" y1="130" x2="960" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a997ff"/>
+      <stop offset="1" stop-color="#53d8e7"/>
+    </linearGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#aab7c8" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="1090" cy="80" r="270" fill="#8f7cff" fill-opacity=".08"/>
+  <circle cx="105" cy="625" r="250" fill="#53d8e7" fill-opacity=".05"/>
+  <rect x="86" y="82" width="66" height="66" rx="18" fill="#111f32" stroke="#8f7cff" stroke-opacity=".65"/>
+  <text x="119" y="124" fill="#a997ff" font-family="monospace" font-size="22" font-weight="700" text-anchor="middle">DC</text>
+  <text x="86" y="240" fill="#f2f6fb" font-family="Segoe UI, Arial, sans-serif" font-size="70" font-weight="650">Daniel Coutinho</text>
+  <text x="86" y="322" fill="url(#accent)" font-family="Segoe UI, Arial, sans-serif" font-size="66" font-weight="650">Desenvolvedor .NET</text>
+  <text x="90" y="392" fill="#aab7c8" font-family="Segoe UI, Arial, sans-serif" font-size="25">C# · ASP.NET Core · SQL Server · APIs REST</text>
+  <line x1="88" y1="465" x2="1112" y2="465" stroke="#aab7c8" stroke-opacity=".18"/>
+  <text x="90" y="522" fill="#748298" font-family="monospace" font-size="19">BACK-END  /  APLICAÇÕES WEB  /  INTEGRAÇÕES</text>
+  <text x="1110" y="527" fill="#a997ff" font-family="monospace" font-size="17" text-anchor="end">4+ ANOS COM .NET</text>
+</svg>
