@@ -769,17 +769,28 @@ Quando a publicação for autorizada:
 O workflow executará:
 
 1. checkout de uma referência conhecida;
-2. instalação reprodutível com `npm ci --ignore-scripts`;
-3. auditoria das dependências de produção;
-4. validação do conteúdo;
-5. build estático;
-6. validação de segurança do artefato;
-7. envio exclusivo da pasta `out`;
-8. publicação no GitHub Pages com identidade temporária do GitHub Actions.
+2. leitura dos metadados do GitHub Pages;
+3. instalação reprodutível com `npm ci --ignore-scripts`;
+4. auditoria das dependências de produção;
+5. validação do conteúdo;
+6. build estático;
+7. validação de segurança do artefato;
+8. envio exclusivo da pasta `out`;
+9. publicação no GitHub Pages com identidade temporária do GitHub Actions.
+
+A Action `configure-pages` é utilizada sem o parâmetro
+`static_site_generator: next`. O `next.config.mjs` já calcula `basePath` e
+`assetPrefix` a partir de `GITHUB_REPOSITORY`; permitir que a Action também
+reescreva a configuração causaria duas fontes de configuração e é incompatível
+com a sintaxe utilizada pelo Next.js 16.
 
 O build possui somente `contents: read` e `pages: read`. O deploy, executado em
 outro job, possui somente `pages: write` e `id-token: write`. Essas permissões
 não são incorporadas ao HTML, CSS ou JavaScript publicado.
+
+Os workflows definem `NEXT_TELEMETRY_DISABLED=1`. Isso impede o envio de
+telemetria anônima do Next.js durante os builds do GitHub Actions; não existe
+analytics nem telemetria no navegador do visitante.
 
 O endereço público esperado para este repositório é:
 

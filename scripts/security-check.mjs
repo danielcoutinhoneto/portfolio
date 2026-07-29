@@ -148,6 +148,7 @@ for (const requiredControl of [
   "id-token: write",
   "npm ci --ignore-scripts",
   "npm audit --omit=dev --audit-level=high",
+  'NEXT_TELEMETRY_DISABLED: "1"',
   "npm run security:check"
 ]) {
   if (!deployWorkflow.includes(requiredControl)) {
